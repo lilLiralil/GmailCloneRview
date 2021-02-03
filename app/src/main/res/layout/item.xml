@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_view_bg"
+    android:layout_marginBottom="8dp"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp">
+
+        <TextView
+            android:id="@+id/txt_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            tools:text="F"
+            android:background="@drawable/circle" />
+
+        <TextView
+            android:id="@+id/txt_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/teal_700"
+            tools:text="Facebook"
+            android:layout_toStartOf="@+id/date"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/txt_icon"
+            android:layout_alignTop="@+id/txt_icon"
+            />
+
+        <TextView
+            android:id="@+id/txt_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/teal_700"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            tools:text="No jornal O DIA você encontra as últimas notícias sobre o Rio, esportes, economia, diversão, Brasil, mundo e nosso time de colunistas."
+            android:layout_marginStart="16dp"
+            android:layout_below="@+id/txt_user"
+            android:layout_alignStart="@+id/txt_user"
+            />
+        <TextView
+            android:id="@+id/txt_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/teal_200"
+            tools:text="Estados Unidos - O número de hospitalizados nos EUA devido à covid-19 caiu para menos de 100 mil pela primeira vez em quase dois meses, enquanto o número de novos casos continuou a cair."
+            android:layout_below="@+id/txt_subject"
+            android:layout_alignStart="@+id/txt_user"
+            android:layout_marginEnd="24dp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_toStartOf="@+id/star"
+            />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textColor="@color/blue_grey_300"
+            tools:text="20 de mai"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            />
+        <ImageView
+            android:id="@+id/star"
+            android:src="@drawable/ic_baseline_stars_24"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+
+            />
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>
